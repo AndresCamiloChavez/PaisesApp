@@ -22,4 +22,7 @@ export class PaisService {
   getPaisPorCapital(nameCapital: string){
     return this.http.get<Country[]>(this.apiUrl+'/capital/'+nameCapital);
   }
+  getPaisPorCode(code: string){
+    return this.http.get<Country>(this.apiUrl+'/alpha/'+code);
+  }
 }
