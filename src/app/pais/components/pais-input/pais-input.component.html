@@ -5,6 +5,7 @@
       autocomplete="off"
       name="termino"
       class="form-control"
-      placeholder="Buscar país"
+      [placeholder]="placeholder"
+      (input)="teclaPresionada($event)"
     />
   </form>

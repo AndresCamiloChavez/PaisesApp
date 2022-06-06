@@ -3,7 +3,7 @@
 
 <div class="row">
   <div class="col">
-   <app-pais-input (onEnter)="buscarPorPais($event)"></app-pais-input>
+   <app-pais-input placeholder="Buscar por país" (onDebounce)="sugerencias($event)" (onEnter)="buscarPorPais($event)"></app-pais-input>
   </div>
 </div>
 <hr />

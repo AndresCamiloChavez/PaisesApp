@@ -14,8 +14,8 @@
             <td>
                 <img [src]="pais.flag" class="small-flag" lt="">
             </td>
-            <td>{{pais.name}}</td>
-            <td>{{pais.population}}</td>
+            <td>{{pais.capital}}, {{pais.name}}</td>
+            <td>{{pais.population| number: '3.1'}}</td>
             <td>
                 <a [routerLink]="['/pais',pais.alpha2Code]" >Ver...</a>
             </td>

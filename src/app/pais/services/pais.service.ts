@@ -18,4 +18,8 @@ export class PaisService {
     // );
     return this.http.get<Country[]>(this.apiUrl+'/name/'+name);  
   }
+
+  getPaisPorCapital(nameCapital: string){
+    return this.http.get<Country[]>(this.apiUrl+'/capital/'+nameCapital);
+  }
 }

@@ -27,5 +27,8 @@ export class PorPaisComponent{
       console.error('Ocurrió un error',error);
     })
   }
+  sugerencias(event: any){
+    //TODO: SUGERENCIAS
+  }
 
 }
