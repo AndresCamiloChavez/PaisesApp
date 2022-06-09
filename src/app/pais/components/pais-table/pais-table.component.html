@@ -9,13 +9,13 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let pais of paises; let i = index">
+        <tr *ngFor="let pais of paises; let i = index" class="animate__animated animate__fadeIn">
             <td>{{i+1}}</td>
             <td>
                 <img [src]="pais.flag" class="small-flag" lt="">
             </td>
             <td>{{pais.capital}}, {{pais.name}}</td>
-            <td>{{pais.population| number: '3.1'}}</td>
+            <td >{{pais.population| number: '3.1'}}</td>
             <td>
                 <a [routerLink]="['/pais',pais.alpha2Code]" >Ver...</a>
             </td>
